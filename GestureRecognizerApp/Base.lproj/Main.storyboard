@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16085" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16078.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GestureRecognizerApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="eiffell" translatesAutoresizingMaskIntoConstraints="NO" id="m82-QF-CR6">
+                                <rect key="frame" x="24" y="160" width="366" height="253"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Eiffell" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pg5-x7-Q6k">
+                                <rect key="frame" x="73" y="461" width="268" height="61"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="61" id="qxv-L5-F6G"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Pg5-x7-Q6k" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="73" id="2Nj-d4-gS0"/>
+                            <constraint firstItem="m82-QF-CR6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="31u-ee-R5T"/>
+                            <constraint firstItem="Pg5-x7-Q6k" firstAttribute="top" secondItem="m82-QF-CR6" secondAttribute="bottom" constant="48" id="5Na-zX-x4l"/>
+                            <constraint firstItem="m82-QF-CR6" firstAttribute="centerX" secondItem="Pg5-x7-Q6k" secondAttribute="centerX" id="6hC-6x-f3a"/>
+                            <constraint firstItem="m82-QF-CR6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="116" id="FBq-0f-zVP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Pg5-x7-Q6k" secondAttribute="bottom" constant="340" id="q7y-TP-wug"/>
+                            <constraint firstItem="m82-QF-CR6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="qUD-6R-zHe"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="m82-QF-CR6" id="UsW-Ee-4nj"/>
+                        <outlet property="myLabel" destination="Pg5-x7-Q6k" id="tTv-UA-aUz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="138.61607142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="eiffell" width="850" height="567"/>
+    </resources>
+</document>
